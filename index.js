@@ -93,7 +93,7 @@ function temperatureInF(temp, tempScale) {
   }
 }
 
-console.log(temperatureInF(24, C));
+// console.log(temperatureInF(24, C));
 
 /**
  * ### Challenge `makePersonObject`
@@ -111,9 +111,19 @@ console.log(temperatureInF(24, C));
  *   email: "leia@leia.com",
  * }
  */
-function makePersonObject(/* code here */) {
-  /* code here */
+
+const person = [
+  {
+    id: 5,
+    name: 'Leia',
+    email: 'leia@leia.com',
+  },
+];
+function makePersonObject(person) {
+  return person[0];
 }
+
+console.log(makePersonObject(person));
 
 /**
  * ### Challenge `getName`
@@ -128,9 +138,20 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
  */
-function getName(/* code here */) {
-  /* code here */
+
+const thisChick = [
+  {
+    id: 5,
+    name: 'Leia',
+    email: 'letia@leia.com',
+  },
+];
+let name = thisChick[0].name;
+function getName(name) {
+  return `Hello, my name is ${name}`;
 }
+
+console.log(getName(name));
 
 /**
  * ### Challenge `appleIndex`
